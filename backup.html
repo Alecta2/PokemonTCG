@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+    <script src="https://kit.fontawesome.com/034c94b291.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Previous Button -->
+  <button id="prev-btn">
+      <i class="fas fa-arrow-circle-left"></i>
+  </button>
+
+  <!-- Book -->
+  <div id="book1" class="book">
+      <!-- Paldea Evolvod -->
+      <!-- Paper 1 -->
+      <div id="p1" class="paper" style="z-index: 7;" >
+          <div class="front">
+              <div id="f1" class="front-content">
+                  <h1>Pokemon TCG</h1>
+              </div>
+          </div>
+          <div class="back">
+              <div id="b1" class="back-content">
+                  <h1>Pokemon 1 - 100</h1>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Paper 2 -->
+      <div id="p2" class="paper" style="z-index: 6;">
+          <div class="front">
+              <div id="f2" class="front-content">
+                  <table>
+                      <tr>
+                        <?php 
+                            while ($row = $result->fetch_assoc()) {
+                              echo '<th><img src="'.$row['image_location'].'"></th>';
+                            }
+                        ?>
+                      </tr>
+                      <tr>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/7.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/8.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/9.jpg"></th>
+                      </tr>
+                      <tr>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/7.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/8.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/9.jpg"></th>
+                      </tr>
+                    </table>
+              </div>
+          </div>
+          <div class="back">
+              <div id="b2" class="back-content">
+                  <table>
+                      <tr>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/10.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/11.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/12.jpg"></th>
+                      </tr>
+                      <tr>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/13.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/14.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/15.jpg"></th>
+                      </tr>
+                      <tr>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/16.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/17.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/18.jpg"></th>
+                      </tr>
+                    </table>
+              </div>
+          </div>
+      </div>
+
+      <!-- Paper 3 -->
+      <div id="p3" class="paper"  style="z-index: 5;">
+          <div class="front">
+              <div id="f3" class="front-content">
+                  <table>
+                      <tr>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/19.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/20.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/21.jpg"></th>
+                      </tr>
+                      <tr>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/22.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/23.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/24.jpg"></th>
+                      </tr>
+                      <tr>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/25.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/26.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/27.jpg"></th>
+                      </tr>
+                    </table>
+              </div>
+          </div>
+          <div class="back">
+              <div id="b3" class="back-content">
+                  <table>
+                      <tr>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/28.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/29.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/30.jpg"></th>
+                      </tr>
+                      <tr>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/31.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/32.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/33.jpg"></th>
+                      </tr>
+                      <tr>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/34.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/35.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/36.jpg"></th>
+                      </tr>
+                    </table>
+              </div>
+          </div>
+      </div>
+
+      <!-- Paper 4 -->
+      <div id="p4" class="paper"  style="z-index: 4;">
+        <div class="front">
+            <div id="f4" class="front-content">
+                <table>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/37.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/38.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/39.jpg"></th>
+                    </tr>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/40.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/41.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/42.jpg"></th>
+                    </tr>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/43.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/44.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/45.jpg"></th>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="back">
+              <div id="b4" class="back-content">
+                  <table>
+                      <tr>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/46.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/47.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/48.jpg"></th>
+                      </tr>
+                      <tr>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/49.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/50.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/51.jpg"></th>
+                      </tr>
+                      <tr>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/52.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/53.jpg"></th>
+                        <th><img src="https://www.serebii.net/card/paldeaevolved/54.jpg"></th>
+                      </tr>
+                    </table>
+              </div>
+          </div>
+      </div>
+
+      <!-- Paper 5 -->
+      <div id="p5" class="paper"  style="z-index: 3">
+        <div class="front">
+            <div id="f5" class="front-content">
+                <table>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/55.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/56.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/57.jpg"></th>
+                    </tr>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/58.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/59.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/60.jpg"></th>
+                    </tr>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/61.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/62.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/63.jpg"></th>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="back">
+            <div id="b5" class="back-content">
+                <table>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/64.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/65.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/66.jpg"></th>
+                    </tr>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/67.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/68.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/69.jpg"></th>
+                    </tr>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/70.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/71.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/72.jpg"></th>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+      </div>
+
+      <!-- Paper 6 -->
+      <div id="p6" class="paper"  style="z-index: 2">
+        <div class="front">
+            <div id="f6" class="front-content">
+                <table>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/55.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/56.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/57.jpg"></th>
+                    </tr>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/58.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/59.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/60.jpg"></th>
+                    </tr>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/61.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/62.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/63.jpg"></th>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="back">
+            <div id="b6" class="back-content">
+                <table>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/64.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/65.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/66.jpg"></th>
+                    </tr>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/67.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/68.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/69.jpg"></th>
+                    </tr>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/70.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/71.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/72.jpg"></th>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+      </div>
+
+      <!-- Paper 7 -->
+      <div id="p7" class="paper"  style="z-index: 1">
+        <div class="front">
+            <div id="f7" class="front-content">
+                <table>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/55.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/56.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/57.jpg"></th>
+                    </tr>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/58.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/59.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/60.jpg"></th>
+                    </tr>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/61.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/62.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/63.jpg"></th>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="back">
+            <div id="b7" class="back-content">
+                <table>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/64.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/65.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/66.jpg"></th>
+                    </tr>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/67.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/68.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/69.jpg"></th>
+                    </tr>
+                    <tr>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/70.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/71.jpg"></th>
+                      <th><img src="https://www.serebii.net/card/paldeaevolved/72.jpg"></th>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+  </div>
+
+  <!-- Next Button -->
+  <button id="next-btn">
+      <i class="fas fa-arrow-circle-right"></i>
+  </button>
+
+  <!-- book 2 -->
+  
+
+  <!-- <div class="details">
+      <input type='button' onClick='javascript:showTable();' value='show'>
+
+      <table id='tableDetail' border=1>
+      <tr><th>SNO</th><th>NAME</th><th><input type='button' onClick='javascript:hideTable();' value='hide'></th></tr>
+      <tr><td> 1</td><td> Angelina</td><td> Delhi </td></tr>
+      <tr><td> 2</td><td> Simran </td><td> Mumbai </td></tr>
+      <tr><td> 3</td><td> Sania </td><td> Chennai </td></tr>
+      <tr><td> 4</td><td> Martina </td><td> Kolkata </td></tr>
+      </table>
+  </div> -->
+
+</body>
+</html>
